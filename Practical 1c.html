@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML SVG</title>
+  <style>
+    h2{
+      text-align: center;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+  </style>
+  <script>
+    function ol()
+    {
+      var currentdate = new Date(); 
+      var datetime ="Performed on:"+currentdate.getDate() +"/"+(currentdate.getMonth()+1)+"/" + currentdate.getFullYear() + " " + currentdate.getHours() + ":" +currentdate.getMinutes();
+        document.getElementById("time").innerHTML = datetime; 
+    }
+  </script>
+</head>
+<body onload="ol()">
+<h3>Name:- Bhalodia Chaitanya (200130107502)</h3>
+<h5>Practical 1:= Basic Svg Tags</h5> 
+<h5 id="time"></h5> 
+<h2>HTML SVG TAGS</h2>
+<table style="border:1px solid #3d3d3d; margin-left: auto; margin-right: auto;"> 
+  <tr>
+    <th>SHAPES</th>
+    <th>SVG'S</th>
+  </tr>
+  <tr>
+    <th><h3>Circle</h3></th>
+    <td>
+      <svg width="300" height="150">
+        <circle cx="150" cy="75" r="60" stroke="black" stroke-width="2" fill="orange" />
+      </svg>
+    </td>
+  </tr>
+  <tr>
+    <th><h3>Rectangle</h3></th>
+    <td>
+      <svg width="300" height="150">
+        <rect x=10 y=10 width="280" height="135" stroke="black" stroke-width="2" fill="#86B2EF" />
+      </svg>
+    </td>
+  </tr>
+  <tr>
+    <th><h3>Text</h3></th>
+    <td>
+      <svg width="300" height="150">
+      <text fill="#D6CC00" font-size="30" font-family="Times New Roman" x="70" y="89">200130107502</text>
+      </svg>
+    </td>
+  </tr>
+  <tr>
+    <th><h3>Line</h3></th>
+    <td>
+      <svg width="300" height="150">
+      <line x1="10" y1="75" x2="290" y2="75" stroke="black" stroke-width="2" />
+      </svg>
+    </td>
+  </tr>
+</body>
+</html>
+  
